@@ -1,0 +1,28 @@
+{
+  "name": "killer-xd-bot",
+  "version": "1.0.0",
+  "description": "Killer_XD WhatsApp Bot by Scotty",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "dev": "nodemon index.js"
+  },
+  "dependencies": {
+    "@malzmc/baileys": "file:./Baileys-master",
+    "axios": "^1.6.0",
+    "cors": "^2.8.5",
+    "express": "^4.18.2",
+    "fluent-ffmpeg": "^2.1.2",
+    "fs-extra": "^11.2.0",
+    "jimp": "^0.22.10",
+    "node-cache": "^5.1.2",
+    "node-fetch": "^2.7.0",
+    "pino": "^8.16.2",
+    "pino-pretty": "^10.3.1",
+    "qrcode": "^1.5.3",
+    "sharp": "^0.33.1"
+  },
+  "engines": {
+    "node": ">=20.0.0"
+  }
+}

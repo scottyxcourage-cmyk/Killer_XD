@@ -1,0 +1,19 @@
+services:
+  - type: web
+    name: killer-xd-bot
+    env: node
+    region: oregon
+    plan: free
+    buildCommand: cp -r /opt/render/project/src/Baileys-master . && npm install
+    startCommand: npm start
+    envVars:
+      - key: NODE_ENV
+        value: production
+      - key: PORT
+        generateValue: true
+    healthCheckPath: /status
+    autoDeploy: true
+    disk:
+      name: sessions
+      mountPath: /opt/render/project/src/sessions
+      sizeGB: 1
